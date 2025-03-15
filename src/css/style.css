@@ -1,0 +1,101 @@
+/* === Global Styles === */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* === Chat Button Styles === */
+.chat-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 75px;
+  height: 75px;
+  background-color: rgb(254, 0, 0);
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 100ms linear;
+}
+
+.chat-button:hover {
+  transform: scale(1.1);
+}
+
+/* === Chat Form Container Styles === */
+.chat-form {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  padding: 24.5px 20px 22.5px 20px;
+  background-color: white;
+  border: 1px solid rgb(218, 218, 218);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: none;
+  opacity: 0;
+  transition: opacity 100ms linear;
+}
+
+.chat-form.show {
+  display: block;
+  opacity: 1;
+}
+
+/* === Chat Form Header Styles === */
+.chat-form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.chat-form-header h3 {
+  margin: 0;
+  font-size: 21px;
+  font-weight: 750;
+  line-height: 1.35;
+}
+
+/* === Close Button Styles === */
+.close-button {
+  position: absolute;
+  top: 14.5px;
+  right: 13.5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 100ms linear;
+  font-size: 20.5px;
+  line-height: 0.90;
+}
+
+/* === Chat Form Input Styles === */
+.chat-form textarea {
+  width: 93%;
+  height: 185px;
+  padding: 10px;
+  border: 1px solid rgb(218, 218, 218);
+  border-radius: 5px;
+  resize: none;
+  margin-bottom: 6.75px;
+}
+
+/* === Submit Button Styles === */
+.chat-form .submit-button {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(240, 240, 240);
+  border: 1px solid rgb(218, 218, 218);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13.5px;
+}
+
+.chat-form .submit-button:hover {
+  background-color: rgb(230, 230, 230);
+}
